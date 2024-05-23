@@ -12,3 +12,9 @@ if (numeroCuotas <= 5) {
 
 console.log(montoPorCuota);
 alert("El monto por cuota seria: " + montoPorCuota);
+
+// Imprimiendo el monto y numero de orden de cada cuota
+
+for (let numeroDeCuota=1; numeroDeCuota<=numeroCuotas; numeroDeCuota++) {
+    console.log(numeroDeCuota);
+}
