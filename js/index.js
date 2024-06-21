@@ -73,8 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const vaciarCarrito = document.querySelector("#vaciar");
 const vaciarBtn = document.createElement("button");
 function carritoVacio () {
-    carrito.innerHTML = " ";
+    carrito = [];
     localStorage.clear();
+    renderCart();
 }
 vaciarBtn.addEventListener('click', carritoVacio);
 vaciarBtn.innerHTML = "Vaciar carrito";
